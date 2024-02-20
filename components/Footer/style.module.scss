@@ -1,0 +1,40 @@
+.Footer {
+  background-color: var(--bordo-bg-gmartins);
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+
+  .FooterDesktop {
+    display: none;
+  }
+
+  .FooterMobile {
+    display: block;
+  }
+
+  @media screen and (min-width: 840px) {
+    .FooterDesktop {
+      display: grid;
+    }
+
+    .FooterMobile {
+      display: none;
+    }
+  }
+
+
+
+  .subFooter {
+    background-color: var(--grafite-bg);
+    width: 100%;
+
+    & span {
+      color: var(--white-text-gmartins);
+      font-size: 0.563rem;
+      font-weight: 500;
+      display: block;
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+}

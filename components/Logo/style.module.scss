@@ -1,0 +1,25 @@
+.Logo {
+
+  .logoDesktop {
+    display: none;
+
+    @media screen and (min-width: 600px) {
+      display: block;
+    }
+  }
+
+  .logoMobile {
+    display: none;
+
+    @media screen and (max-width: 599px) {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 880px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: calc(20px + 24px);
+  }
+}

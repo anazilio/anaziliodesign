@@ -1,0 +1,49 @@
+.Collapse {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--yellow-bg-gmartins);
+  color: var(--yellow-text-gmartins);
+
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+
+  .arrowClose {
+    color: var(--white-text-gmartins);
+    transition: all 0.2s linear;
+    transform: rotate(0deg);
+  }
+
+  .arrowOpen {
+    color: var(--white-text-gmartins);
+    transition: all 0.2s linear;
+    transform: rotate(180deg);
+  }
+}
+
+.CollapsePanel {
+  padding: 1rem;
+  transition: all 0.2s linear;
+  animation: fadeIn 0.2s linear forwards;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-16px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.Banner {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &>div {
+    padding: 0;
+  }
+
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 80%;
+    max-width: 1920px;
+    width: 100%;
+    background-image: linear-gradient(to right,
+        #f6f7f8 0%,
+        #e6ebfa 20%,
+        #f6f7f8 40%,
+        #f6f7f8 100%);
+    background-size: 80rem 14rem;
+    animation: placeholderShimmer 1s linear infinite forwards;
+  }
+
+  @keyframes placeholderShimmer {
+    0% {
+      background-position: -40rem 0;
+    }
+
+    100% {
+      background-position: 40rem 0;
+    }
+  }
+
+  .bannerImage {
+    width: 100% !important;
+    object-fit: cover;
+  }
+
+  .bannerDesktop,
+  .bannerMobile {
+    display: none;
+  }
+
+  @media screen and (min-width: 960px) {
+    .bannerDesktop {
+      display: block;
+      max-width: 1920px;
+      min-height: 400px;
+    }
+
+    .bannerTablet {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 959px) {
+    .bannerTablet {
+      display: block;
+      max-width: 1920px;
+      min-height: 400px;
+    }
+  }
+
+  @media screen and (max-width: 959px) {
+    .bannerTablet {
+      display: none;
+    }
+
+    .bannerMobile {
+      display: block;
+      max-width: 1920px;
+      min-height: 400px;
+    }
+  }
+}

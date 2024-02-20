@@ -1,0 +1,34 @@
+.Button {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+
+  outline: none;
+  border: 0;
+  transition: opacity 0.2s linear;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.primary {
+  color: var(--yellow-text-gmartins);
+  background-color: var(--bordo-bg-gmartins);
+}
+
+.secondary {
+  color: var(--bordo-text-gmartins);
+  background-color: var(--yellow-bg-gmartins);
+}

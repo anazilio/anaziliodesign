@@ -1,0 +1,106 @@
+.Input {
+  position: relative;
+  width: 100%;
+
+  & input {
+    width: 100%;
+    padding: 10px;
+
+    border: 1.5px solid var(--gray-bg-200);
+
+    background-color: var(--white-bg-gmartins);
+
+    color: var(--bordo-text-gmartins);
+    border-radius: 4px;
+    outline: none;
+    font-size: 1em;
+    transition: border 0.2s linear;
+    letter-spacing: 0.1px;
+  }
+
+  & span {
+    background-color: var(--white-bg-gmartins);
+    position: absolute;
+    left: 0;
+    padding: 0px 10px;
+    font-size: 1em;
+    pointer-events: none;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    transition-delay: 0;
+
+    color: var(--bordo-text-gmartins);
+    transform: translateX(10px) translateY(8px);
+  }
+
+
+  & input:focus {
+    border: 1.5px solid var(--gray-bg-200);
+  }
+}
+
+.inputFocus {
+
+  & input~span,
+  & input~span {
+    transform: translateX(10px) translateY(-7px);
+    -ms-transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+  }
+}
+
+
+.InputThemeYellow {
+  & input {
+    border-color: var(--bordo-bg-gmartins);
+    background-color: var(--yellow-bg-gmartins);
+    color: var(--bordo-text-gmartins);
+  }
+
+  & span {
+    background-color: var(--yellow-bg-gmartins);
+    color: var(--bordo-text-gmartins);
+  }
+
+  & input~span,
+  & input~span {
+    color: var(--bordo-text-gmartins);
+    background-color: var(--yellow-bg-gmartins);
+    border-left: 1.5px solid var(--bordo-bg-gmartins);
+    border-right: 1.5px solid var(--bordo-bg-gmartins);
+  }
+
+
+  & input:focus {
+    border: 1.5px solid var(--bordo-bg-gmartins);
+  }
+}
+
+.InputThemeBordo {
+  & input {
+    border-color: var(--yellow-bg-gmartins);
+    background-color: var(--bordo-bg-gmartins);
+    color: var(--white-text-gmartins);
+  }
+
+  & span {
+    background-color: var(--bordo-bg-gmartins);
+    color: var(--white-text-gmartins);
+  }
+
+  & input~span,
+  & input~span {
+    color: var(--white-text-gmartins);
+    background-color: var(--bordo-bg-gmartins);
+    border-left: 1.5px solid var(--yellow-bg-gmartins);
+    border-right: 1.5px solid var(--yellow-bg-gmartins);
+  }
+
+
+  & input:focus {
+    border: 1.5px solid var(--yellow-bg-gmartins);
+  }
+}
