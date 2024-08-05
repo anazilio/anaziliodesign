@@ -1,15 +1,22 @@
 'use client';
 import { useEffect } from 'react';
 
-import { Banner, BannerProps } from '../../components/Banner/Banner';
+import {
+  BannerText,
+  Contact,
+  SomeWorks,
+  WhatDoIDo,
+  WhoAlreadyKnows
+} from '../../components';
 
 import styled from './style.module.scss';
 
 import AOS from 'aos';
 
-export type HomeProps = BannerProps;
+// eslint-disable-next-line @typescript-eslint/ban-types
+export type HomeProps = {};
 
-export const Home = ({ images }: HomeProps) => {
+export const Home = () => {
   useEffect(() => {
     AOS.init({
       delay: 500,
@@ -20,7 +27,11 @@ export const Home = ({ images }: HomeProps) => {
 
   return (
     <div className={styled.Home}>
-      <Banner images={images} />
+      <BannerText />
+      <WhatDoIDo />
+      <SomeWorks />
+      <WhoAlreadyKnows />
+      <Contact />
     </div>
   );
 };

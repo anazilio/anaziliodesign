@@ -1,0 +1,35 @@
+.SomeWorks {
+  background-color: var(--grafite);
+  max-width: 1920px;
+  width: 100%;
+  margin: 130px auto;
+  position: relative;
+
+  .title {
+    color: var(--white);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    gap: 1.125rem;
+
+    span {
+      display: block;
+      position: relative;
+
+      & img {
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+      }
+
+      @media (max-width: 768px) {
+        & img {
+          width: 130px;
+          bottom: -8px;
+        }
+      }
+    }
+  }
+}

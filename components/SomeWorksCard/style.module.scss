@@ -1,0 +1,88 @@
+.SomeWorksCard {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  max-width: 400px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+
+  @media (width <=1620px) {
+
+    &,
+    & img {
+      max-width: 300px;
+      max-height: 400px;
+    }
+  }
+
+  @media (width <=460px) {
+
+    &,
+    & img {
+      max-width: 250px;
+      max-height: 350px;
+      min-width: 250px;
+      min-height: 350px;
+    }
+  }
+
+  & img {
+    object-fit: cover;
+    border-radius: 8px;
+    filter: drop-shadow(var(--box-shadow-black));
+    transition: all 0.2s ease;
+  }
+
+  .addittionalInfos {
+    transition: all 0.2s ease;
+    height: 120px;
+    background: linear-gradient(to top, rgb(0 0 0 / 0.74), rgb(0 0 0 / 0.40));
+    padding: 1rem;
+    color: var(--white-1);
+    box-shadow: var(--box-shadow-black);
+
+    & p {
+      white-space: pre-line;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-clamp: 3;
+      overflow: hidden;
+
+      &:nth-child(1) {
+        font-size: 1.125rem;
+        font-weight: 900;
+      }
+
+      &:nth-child(2) {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      &:nth-child(3) {
+        font-size: .875rem;
+        margin-top: .5rem;
+      }
+    }
+
+    & button {
+      margin-top: 12px;
+      margin-left: auto;
+      background-color: var(--purple-4);
+    }
+  }
+
+  &:hover {
+    box-shadow: var(--box-shadow-black);
+
+    .addittionalInfos {
+      transform: translateY(-120px);
+    }
+
+    img {
+      transform: scale(1.2);
+    }
+  }
+}

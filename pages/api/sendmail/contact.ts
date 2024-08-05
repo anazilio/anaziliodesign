@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
-import { FormContactUs } from '../../../components/FormContact/FormContact';
+import { IContactForm } from '../../../components/Contact/Contact';
 
 import { templateMailFormContact } from '../../../utils/htmlTemplateMail';
 import SendMailer from '../../../utils/sendMail';
@@ -10,12 +10,12 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === 'POST') {
-    const contactData = req.body as FormContactUs;
+    const contactData = req.body as IContactForm;
 
     try {
       const mailer = new SendMailer({
-        cc: [contactData.mail],
-        subject: `Precisa de ajuda? (atendimento personalizado) ${contactData.name}`,
+        cc: [contactData.email],
+        subject: `Portfolio - ${contactData.subject}`,
         html: templateMailFormContact(contactData)
       });
       await mailer.sendMail();

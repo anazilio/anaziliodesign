@@ -17,7 +17,7 @@ export const Logo = ({ logo }: LogoProps) => {
             <Image
               src={logo.desktop.url}
               alt={logo.desktop.alt}
-              width={240}
+              width={115}
               height={55}
               draggable={false}
               blurDataURL={logo.desktop.url}
@@ -27,8 +27,8 @@ export const Logo = ({ logo }: LogoProps) => {
             <Image
               src={logo.mobile.url}
               alt={logo.mobile.alt}
-              width={48}
-              height={55}
+              width={40}
+              height={40}
               draggable={false}
               blurDataURL={logo.mobile.url}
               className={styled.logoMobile}

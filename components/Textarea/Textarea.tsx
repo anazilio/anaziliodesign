@@ -6,27 +6,11 @@ import styled from './style.module.scss';
 
 export type TextAreaProps = TextareaHTMLAttributes<HTMLTextAreaElement> & {
   label: string;
-  theme?: 'white' | 'yellow' | 'bordo';
   ref?: Ref<HTMLTextAreaElement>;
 };
 
-export const Textarea = ({
-  theme = 'white',
-  label,
-  ...rest
-}: TextAreaProps) => {
+export const Textarea = ({ label, ...rest }: TextAreaProps) => {
   const [isFocusInput, setIsFocusInput] = useState<boolean>(false);
-
-  const selectThemeTextarea = () => {
-    switch (theme) {
-      case 'yellow':
-        return styled.TextareaThemeYellow;
-      case 'bordo':
-        return styled.TextareaThemeBordo;
-      default:
-        return '';
-    }
-  };
 
   const isValidUpLabel = useMemo(
     () => isFocusInput || !!rest?.value,
@@ -35,7 +19,7 @@ export const Textarea = ({
 
   return (
     <div
-      className={`${styled.Textarea} ${selectThemeTextarea()} ${
+      className={`${styled.Textarea} ${
         isValidUpLabel ? styled.inputFocus : ''
       }`}
     >

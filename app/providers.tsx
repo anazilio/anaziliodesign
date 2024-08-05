@@ -10,7 +10,8 @@ export function Providers({ children }: PropsWithChildren) {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        scrollBehavior: 'smooth'
       }}
     >
       {children}

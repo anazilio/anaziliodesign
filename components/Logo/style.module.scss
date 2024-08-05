@@ -10,6 +10,7 @@
 
   .logoMobile {
     display: none;
+    transform: translateX(-10px);
 
     @media screen and (max-width: 599px) {
       display: block;

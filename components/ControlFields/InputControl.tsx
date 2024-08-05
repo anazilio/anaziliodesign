@@ -5,10 +5,7 @@ import { Input, InputProps } from '../Input/Input';
 
 export type InputControlProps = {
   control: Omit<ControllerProps, 'render'>;
-  input: Pick<
-    InputProps,
-    'label' | 'theme' | 'type' | 'maxLength' | 'minLength'
-  >;
+  input: Pick<InputProps, 'label' | 'type' | 'maxLength' | 'minLength'>;
   mask?: (value: string) => string;
   error?: string;
 };
@@ -36,9 +33,7 @@ const InputControl = forwardRef(
           )}
         />
         {props.error && (
-          <span className={`input-field-error-${props.input?.theme}`}>
-            {props.error}
-          </span>
+          <span className={`input-field-error`}>{props.error}</span>
         )}
       </div>
     );

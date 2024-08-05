@@ -1,5 +1,7 @@
 import { HeaderProps } from '../components/Header/Header';
 
+import { allLinks } from './allLinks';
+
 export const headerMock: HeaderProps = {
   logo: {
     desktop: {
@@ -13,26 +15,17 @@ export const headerMock: HeaderProps = {
   },
   menuItems: [
     {
-      label: 'QUEM SOMOS',
-      link: 'allLinks.ABOUT_US'
+      label: 'PORTFÓLIO',
+      link: allLinks.HOME
     },
     {
-      label: 'SERVIÇOS',
-      link: 'allLinks.SERVICES'
+      label: 'CONTATO',
+      link: allLinks.CONTACT
     },
     {
-      label: 'FALE CONOSCO',
-      link: 'allLinks.CONTACT_US'
-    }
-  ],
-  subMenuItems: [
-    {
-      label: 'PORTAL DO CLIENTE',
-      link: 'allLinks.CUSTOMER_PORTAL'
-    },
-    {
-      label: 'SISTEMA DE CANHOTOS',
-      link: 'allLinks.LEFT_HEAD_SYSTEM'
+      label: 'ANA',
+      link: allLinks.SOCIAL_NETWORKS,
+      target: '_blank'
     }
   ]
 };

@@ -1,0 +1,72 @@
+.MySkills {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-width: 340px;
+  max-width: 460px;
+  transition: 0.2s linear;
+  border-radius: 20px;
+  background-color: var(--white);
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black);
+    display: block;
+    position: relative;
+    padding: 2rem 0;
+    text-align: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      width: 50%;
+      height: 4px;
+      background-color: var(--purple-4);
+      border-radius: 10px;
+    }
+  }
+
+  .description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black);
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 1180px) {
+    padding: 1rem;
+    min-width: 280px;
+  }
+
+  @media (max-width: 660px) {
+    padding: 1rem;
+    min-width: 180px;
+
+    &:hover {
+      transform: scale(1);
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: 470px) {
+    padding: 0.5rem;
+    min-width: 130px;
+
+    &:hover {
+      transform: scale(1);
+      box-shadow: none;
+    }
+  }
+}

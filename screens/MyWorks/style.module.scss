@@ -1,0 +1,75 @@
+.MyWorks {
+  background-color: #fff;
+
+
+  .titleContent {
+    padding-top: 5rem;
+
+    & h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      position: relative;
+      display: block;
+      margin-bottom: 1.25rem;
+      font-weight: 700;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 90px;
+        height: 2px;
+        background-color: var(--purple-4);
+        border-radius: 8px;
+      }
+    }
+
+    & p {
+      display: block;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .gridContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5rem 0;
+
+    & .gridItem {
+      overflow: hidden;
+      transition: all 0.2s ease;
+      border-radius: 8px;
+
+      & img {
+        border-radius: 8px;
+        object-fit: cover;
+        transition: all 0.2s ease;
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 1080px !important;
+      }
+
+      & video {
+        border-radius: 8px;
+        width: 100% !important;
+
+      }
+
+      &:hover {
+        box-shadow: var(--box-shadow-black);
+
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+  }
+}

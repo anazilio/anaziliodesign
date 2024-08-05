@@ -5,7 +5,7 @@ import { TextAreaProps, Textarea } from '../Textarea/Textarea';
 
 export type TextareaControlProps = {
   control: Omit<ControllerProps, 'render'>;
-  textarea: Pick<TextAreaProps, 'label' | 'theme' | 'maxLength' | 'minLength'>;
+  textarea: Pick<TextAreaProps, 'label' | 'maxLength' | 'minLength'>;
   error?: string;
   mask?: (value: string) => string;
 };
@@ -33,9 +33,7 @@ export const TextareaControl = forwardRef(
           )}
         />
         {props.error && (
-          <span className={`input-field-error-${props.textarea?.theme}`}>
-            {props.error}
-          </span>
+          <span className={`input-field-error`}>{props.error}</span>
         )}
       </div>
     );

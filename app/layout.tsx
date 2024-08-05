@@ -1,24 +1,24 @@
-import { Poppins } from 'next/font/google';
+import { Lexend } from 'next/font/google';
 
-import '../styles/globals.scss';
-import '../styles/theme.scss';
 import { Footer, Header } from '../components';
 
 import { changeHeader } from '../utils/changeHeader';
 
-import { footerMock } from '../mocks/footer';
 import { headerMock } from '../mocks/header';
 import { Providers } from './providers';
-import 'aos/dist/aos.css';
 
-const poppins = Poppins({
+import 'aos/dist/aos.css';
+import '../styles/theme.scss';
+import '../styles/globals.scss';
+
+const lexend = Lexend({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
 export const metadata = changeHeader({
-  title: 'G.Martins',
-  description: 'GMartins descrição'
+  title: 'Portfolio Ana Zilio',
+  description: 'Transformando ideias em arte'
 });
 
 export default function RootLayout({
@@ -28,31 +28,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={poppins.className}>
+      <body className={lexend.className}>
         <Providers>
           <div>
             <Header {...headerMock} />
-            {/* <nav>
-            <ul>
-              <li>
-                <Link href="/">home</Link>
-              </li>
-              <li>
-                <Link href="/users">usuarios</Link>
-              </li>
-              <li>
-                <Link href="/login">login</Link>
-              </li>
-            </ul>
-          </nav>
-          <hr /> */}
             {children}
           </div>
-          <Footer
-            footerItems={footerMock.footerItems}
-            image={footerMock.image}
-            subFooterText={footerMock.subFooterText}
-          />
+          <Footer year={new Date().getFullYear().toString()} />
         </Providers>
       </body>
     </html>
