@@ -15,7 +15,7 @@ export default async function handler(
     try {
       const mailer = new SendMailer({
         cc: [contactData.email],
-        subject: `Portfolio - ${contactData.subject}`,
+        subject: `Portfolio - ${contactData.subject} `,
         html: templateMailFormContact(contactData)
       });
       await mailer.sendMail();
