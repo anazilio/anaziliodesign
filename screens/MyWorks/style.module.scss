@@ -41,11 +41,16 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding: 5rem 0;
+    overflow: hidden;
 
     & .gridItem {
       overflow: hidden;
       transition: all 0.2s ease;
       border-radius: 8px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       & img {
         border-radius: 8px;
@@ -53,7 +58,7 @@
         transition: all 0.2s ease;
         width: 100% !important;
         height: 100% !important;
-        max-width: 1080px !important;
+        max-width: 1280px !important;
       }
 
       & video {
@@ -64,7 +69,6 @@
 
       &:hover {
         box-shadow: var(--box-shadow-black);
-
       }
     }
 

@@ -42,15 +42,44 @@
           color: var(--white);
           position: relative;
 
-          &:hover {
+          & svg {
+            display: none;
+            position: absolute;
+            bottom: -10px;
+            left: -4px;
+          }
+
+          &:last-child {
+
+
             &::before {
-              content: '';
-              position: absolute;
-              bottom: -4px;
-              border-radius: 4px;
-              height: 2px;
-              background-color: var(--white);
-              animation: line-menu 0.2s both;
+              transition: 0.2s all linear;
+              transition-delay: 0.6s;
+            }
+          }
+
+          &:hover {
+            & svg {
+              display: initial
+            }
+
+            &:last-child {
+              a {
+                opacity: 0;
+                transition: 0.2s all linear;
+              }
+
+              &::before {
+                position: absolute;
+                content: "";
+                background: url('/assets/images/icones/ana.svg');
+                background-size: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 40px;
+                height: 40px;
+                transform: translateY(-14px);
+              }
             }
           }
         }
@@ -76,4 +105,40 @@
   display: block;
   width: 100%;
   height: var(--fixed-header-height);
+}
+
+
+
+@keyframes animate-svg-stroke_portfolio {
+  0% {
+    stroke-dashoffset: 109.27777862548828px;
+    stroke-dasharray: 109.27777862548828px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 109.27777862548828px;
+  }
+}
+
+.row_portfolio {
+  -webkit-animation: animate-svg-stroke_portfolio 1s ease 0s both;
+  animation: animate-svg-stroke_portfolio 1s ease 0s both;
+}
+
+@keyframes animate-svg-stroke_contact {
+  0% {
+    stroke-dashoffset: 78.8559799194336px;
+    stroke-dasharray: 78.8559799194336px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 78.8559799194336px;
+  }
+}
+
+.row_contact {
+  -webkit-animation: animate-svg-stroke_contact 1s ease 0s both;
+  animation: animate-svg-stroke_contact 1s ease 0s both;
 }
