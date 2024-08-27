@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
-import Image from 'next/image';
 import { useForm } from 'react-hook-form';
 
 import { Container } from '../Container/Container';
@@ -37,36 +36,84 @@ export const Contact = () => {
             transformar suas <br />
             <div>
               <span>
-                <Image
-                  alt="marcação"
-                  src={'/assets/images/icones/arrow_down.svg'}
-                  width={80}
-                  height={100}
-                  draggable={false}
+                <svg
+                  width="43"
+                  height="110"
+                  viewBox="0 0 43 110"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                   className={styled.arrow_down}
-                />
+                >
+                  <path
+                    d="M28.5756 72.2307C27.1212 74.1261 26.61 76.4141 25.9827 78.6711C23.922 86.0817 24.0717 94.7218 27.759 101.665C21.612 95.771 11.6449 90.1904 3 92.5028"
+                    stroke="#8E178E"
+                    strokeWidth="5"
+                    strokeMiterlimit="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={styled['arrow_down-1']}
+                  ></path>
+                  <path
+                    d="M33 2.5C16.8333 18.6667 -7.60002 60.1 24 96.5"
+                    stroke="#8E178E"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    className={styled['arrow_down-2']}
+                  ></path>
+                </svg>
                 ideias
-                <Image
-                  alt="marcação"
-                  src={'/assets/images/icones/arrow_ideia.svg'}
-                  width={255}
-                  height={20}
-                  draggable={false}
+                <svg
+                  width="231"
+                  height="19"
+                  viewBox="0 0 231 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                   className={styled.dash}
-                />
+                >
+                  <path
+                    d="M3 15.6081C105.966 -7.27326 228 7.98098 228 7.98098"
+                    stroke="#8E178E"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={styled.arrow_ideia}
+                  ></path>
+                </svg>
               </span>
               em{' '}
             </div>
             <span>
               realidade?!
-              <Image
-                alt="marcação"
-                src={'/assets/images/icones/Group 100.svg'}
-                width={80}
-                height={80}
-                draggable={false}
+              <svg
+                width="62"
+                height="53"
+                viewBox="0 0 62 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
                 className={styled.acents}
-              />
+              >
+                <path
+                  d="M26.9731 24.5788C37.7624 19.1842 43.1571 3.00024 43.1571 3.00024"
+                  stroke="#8E178E"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  className={styled['acents-1']}
+                ></path>
+                <path
+                  d="M12.2514 23.34C13.6993 12.1293 6.76605 2.99996 6.76605 2.99996"
+                  stroke="#8E178E"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  className={styled['acents-2']}
+                ></path>
+                <path
+                  d="M59.3345 40.4306C48.6649 34.8031 32.3677 39.8451 32.3677 39.8451"
+                  stroke="#8E178E"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  className={styled['acents-3']}
+                ></path>
+              </svg>
             </span>
           </h1>
           <span>

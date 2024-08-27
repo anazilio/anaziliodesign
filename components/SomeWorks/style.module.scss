@@ -18,18 +18,41 @@
       display: block;
       position: relative;
 
-      & img {
+      & svg {
         position: absolute;
         left: 0;
         bottom: -4px;
       }
 
       @media (max-width: 768px) {
-        & img {
+        & svg {
           width: 130px;
           bottom: -8px;
         }
       }
     }
   }
+}
+
+
+@keyframes animate-sequence-arrow_ideia2 {
+  0% {
+    stroke-dashoffset: 385.44390869140625px;
+    stroke-dasharray: 385.44390869140625px;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 385.44390869140625px;
+  }
+
+  100% {
+    stroke-dashoffset: 385.44390869140625px;
+    stroke-dasharray: 385.44390869140625px;
+  }
+}
+
+
+.arrow_ideia2 {
+  animation: animate-sequence-arrow_ideia2 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s infinite;
 }

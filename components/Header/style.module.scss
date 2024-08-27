@@ -50,8 +50,6 @@
           }
 
           &:last-child {
-
-
             &::before {
               transition: 0.2s all linear;
               transition-delay: 0.6s;
@@ -73,12 +71,12 @@
                 position: absolute;
                 content: "";
                 background: url('/assets/images/icones/ana.svg');
-                background-size: 30px;
+                background-size: 25px;
                 background-repeat: no-repeat;
                 background-position: center;
                 width: 40px;
                 height: 40px;
-                transform: translateY(-14px);
+                transform: translateY(-12px);
               }
             }
           }
