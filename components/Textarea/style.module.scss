@@ -1,0 +1,129 @@
+.Textarea {
+  position: relative;
+  width: 100%;
+
+  & textarea {
+    width: 100%;
+    padding: 16px 10px;
+
+    border: 1.5px solid rgba(145, 158, 171, 0.32);
+
+    background-color: transparent;
+
+    color: #919EAB;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1em;
+    transition: border 0.2s linear;
+    letter-spacing: 0.1px;
+
+    resize: vertical;
+    letter-spacing: 0.1px;
+    scroll-padding: 4px;
+    scrollbar-width: thin;
+
+    min-height: 120px;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 10px rgba(145, 158, 171, 0.32);
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(145, 158, 171, 0.32);
+      border-radius: 4px;
+    }
+  }
+
+  & span {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    padding: 5px 10px;
+    font-size: 1em;
+    pointer-events: none;
+    text-transform: uppercase;
+    transition: transform 0.2s linear;
+    transition-delay: 0;
+
+    color: #919EAB;
+    transform: translateX(10px) translateY(5px);
+  }
+
+
+  & textarea:focus {
+    border: 1.5px solid rgba(145, 158, 171, 0.32);
+  }
+}
+
+.inputFocus {
+
+  & textarea~span,
+  & textarea~span {
+    transform: translateX(10px) translateY(-7px);
+    -ms-transform: translateX(10px) translateY(-7px);
+
+    background-color: var(--grafite);
+    font-size: 0.65em;
+    padding: 0 10px;
+    font-weight: 500;
+
+    letter-spacing: 0.2em;
+  }
+}
+
+.TextareaThemeYellow {
+  & textarea {
+    border-color: var(--bordo-bg-gmartins);
+    background-color: var(--yellow-bg-gmartins);
+    color: #919EAB;
+  }
+
+  & span {
+    background-color: var(--yellow-bg-gmartins);
+    color: #919EAB;
+  }
+
+  & textarea:valid~span,
+  & textarea:focus~span {
+    color: #919EAB;
+    background-color: var(--yellow-bg-gmartins);
+    border-left: 1.5px solid var(--bordo-bg-gmartins);
+    border-right: 1.5px solid var(--bordo-bg-gmartins);
+  }
+
+  & textarea:valid,
+  & textarea:focus {
+    border: 1.5px solid var(--bordo-bg-gmartins);
+  }
+}
+
+.TextareaThemeBordo {
+  & textarea {
+    border-color: var(--yellow-bg-gmartins);
+    background-color: var(--bordo-bg-gmartins);
+    color: var(--white-text-gmartins);
+  }
+
+  & span {
+    background-color: var(--bordo-bg-gmartins);
+    color: var(--white-text-gmartins);
+  }
+
+  & textarea:valid~span,
+  & textarea:focus~span {
+    color: var(--white-text-gmartins);
+    background-color: var(--bordo-bg-gmartins);
+    border-left: 1.5px solid var(--yellow-bg-gmartins);
+    border-right: 1.5px solid var(--yellow-bg-gmartins);
+  }
+
+  & textarea:valid,
+  & textarea:focus {
+    border: 1.5px solid var(--yellow-bg-gmartins);
+  }
+}

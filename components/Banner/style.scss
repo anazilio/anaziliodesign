@@ -1,0 +1,29 @@
+.BannerSliderContainer {
+
+
+  .slick-prev {
+    top: calc(50% - 15px) !important;
+    left: 15px !important;
+    z-index: 4;
+  }
+
+  .slick-next {
+    top: calc(50% - 15px) !important;
+    right: 15px !important;
+    z-index: 4;
+  }
+
+  @media screen and (min-width: 500px) {
+    .slick-prev {
+      top: calc(50% - 15px) !important;
+      left: 60px !important;
+      z-index: 4;
+    }
+
+    .slick-next {
+      top: calc(50% - 15px) !important;
+      right: 60px !important;
+      z-index: 4;
+    }
+  }
+}

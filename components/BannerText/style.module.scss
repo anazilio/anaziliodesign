@@ -1,0 +1,117 @@
+.BannerText {
+  min-height: 85vh;
+  max-height: 85vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @media (max-width: 400px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  & h1 {
+
+    color: var(--white);
+    display: inline-block;
+
+    &>div {
+      display: flex;
+      gap: 16px;
+    }
+
+    .transform {
+      display: block;
+      position: relative;
+
+      & img {
+        position: absolute;
+        left: -46px;
+        width: inherit;
+        top: -44px;
+      }
+    }
+
+
+    .ideas {
+      display: block;
+      position: relative;
+
+      & img {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: inherit;
+      }
+    }
+
+    .art {
+      position: relative;
+      display: block;
+
+      & svg {
+        position: absolute;
+        bottom: -20px;
+        left: -15px;
+        width: inherit;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .transform img {
+        width: 75px;
+        height: 75px;
+      }
+
+      .ideas img {
+        bottom: -10px;
+        left: 0;
+        width: 100px;
+      }
+
+
+      .art svg {
+        bottom: -48px;
+        left: -10px;
+        width: 100px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 1174.6578369140625px;
+    stroke-dasharray: 1174.6578369140625px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1174.6578369140625px;
+  }
+}
+
+@keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 1174.6578369140625px;
+    stroke-dasharray: 1174.6578369140625px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1174.6578369140625px;
+  }
+}
+
+.svg-elem-1 {
+  -webkit-animation: animate-svg-stroke-1 2s ease 0s infinite;
+  animation: animate-svg-stroke-1 2s ease 0s infinite;
+}

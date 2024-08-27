@@ -1,0 +1,104 @@
+.Contact {
+  margin: 8rem 0;
+
+  .container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+
+    @media screen and (max-width: 990px) {
+      grid-template-columns: 1fr;
+    }
+
+    &>div span:last-child {
+      color: var(--white);
+      margin-top: .25rem;
+    }
+
+    & .title {
+      color: var(--white);
+      position: relative;
+      display: block;
+
+      div {
+        display: flex;
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+          gap: 1rem;
+        }
+      }
+
+      span {
+        position: relative;
+      }
+
+      .arrow_down {
+        position: absolute;
+        left: -50px;
+        bottom: -60px;
+
+        @media (max-width: 768px) {
+          width: 40px;
+          height: 40px;
+          left: -25px;
+          bottom: -26px;
+        }
+      }
+
+      .dash {
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+
+        @media (max-width: 768px) {
+          width: 80px;
+          bottom: -8px;
+        }
+      }
+
+      .acents {
+        position: absolute;
+        right: -45px;
+        top: -30px;
+
+        @media (max-width: 768px) {
+          width: 30px;
+          height: 30px;
+
+          right: -18px;
+          top: -12px;
+        }
+      }
+    }
+  }
+
+
+
+  form {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    button {
+      margin-left: auto;
+      display: block;
+      background-color: var(--purple-4);
+      color: var(--white);
+      font-weight: 600;
+      border: 0px;
+      outline: none;
+      padding: .5rem 1rem;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      transition: 0.2s linear;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}

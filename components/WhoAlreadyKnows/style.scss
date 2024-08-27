@@ -1,0 +1,79 @@
+.slick-carousel-content {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+
+  .slick-dots {
+    margin: auto 60px auto 0;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 10px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    button {
+      max-width: 12px;
+      max-height: 12px;
+      min-width: 12px;
+      min-height: 12px;
+      border-radius: 50%;
+      border: 0;
+      outline: none;
+      background-color: rgba(51, 51, 51, 0.20);
+    }
+
+    .slick-active {
+      button {
+        background-color: var(--purple-1);
+      }
+    }
+  }
+
+  .samplePrevArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    right: 0;
+    left: auto;
+    margin-top: -25px;
+    background-color: var(--purple-4);
+    box-shadow: none;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+      opacity: 0.6;
+    }
+  }
+
+  .sampleNextArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 25px;
+    background-color: var(--purple-4);
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
+      opacity: 0.6;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .sampleNextArrow {
+      margin-top: 180px;
+    }
+
+    .samplePrevArrow {
+      margin-top: 140px;
+    }
+
+  }
+
+}

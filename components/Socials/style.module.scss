@@ -1,0 +1,48 @@
+.Socials {
+  & p {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+  }
+
+  & small {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+
+    & span {
+      color: var(--purple-4);
+      border-bottom: 1px solid var(--purple-4);
+    }
+  }
+
+  .socialContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.125rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+
+    & a {
+      background-color: var(--purple-4);
+      color: var(--white);
+      min-width: 48px;
+      min-height: 48px;
+      max-width: 48px;
+      max-height: 48px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: var(--purple-3);
+        transform: scale(1.1) translateY(-10px);
+        box-shadow: var(--box-shadow-black);
+      }
+    }
+  }
+}
