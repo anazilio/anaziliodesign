@@ -16,7 +16,7 @@ export const headerMock: HeaderProps = {
   menuItems: [
     {
       label: 'PORTFÓLIO',
-      link: allLinks.HOME
+      link: allLinks.WORK
     },
     {
       label: 'CONTATO',

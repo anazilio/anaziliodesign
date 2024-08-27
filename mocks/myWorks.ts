@@ -153,7 +153,7 @@ export const myWorks = {
       },
       {
         description: '',
-        img: '/PortfolioAZD/06. Dulce Milagro/8.png'
+        img: '/PortfolioAZD/06. Dulce Milagro/8.jpg'
       },
       {
         description: '',

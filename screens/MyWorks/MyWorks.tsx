@@ -36,8 +36,8 @@ export const MyWorks = ({
 }: IMyWorksProps) => {
   useEffect(() => {
     Aos.init({
-      delay: 500,
-      easing: 'ease-in-out',
+      delay: 100,
+      easing: 'ease',
       once: true
     });
   }, []);
@@ -56,10 +56,9 @@ export const MyWorks = ({
           {items.map((item, index) => (
             <div
               className={styled.gridItem}
-              key={index}
+              key={`${index}-${item?.img || item?.video || ''}`}
               data-aos={index % 2 !== 0 ? 'fade-right' : 'fade-left'}
-              data-aos-delay={index > 6 ? 0.6 : Number(`0.${index}`)}
-              data-aos-duration={500}
+              data-aos-delay={0}
             >
               {item.img ? (
                 <Image

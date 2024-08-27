@@ -24,7 +24,7 @@ export type HeaderProps = {
 
 export const Header = ({ logo, menuItems }: HeaderProps) => {
   const dashHover = (link: string) => {
-    if (link === allLinks.HOME) {
+    if (link === allLinks.WORK) {
       return (
         <svg
           width="99"

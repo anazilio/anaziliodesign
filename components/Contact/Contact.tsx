@@ -1,10 +1,15 @@
+/* eslint-disable import-helpers/order-imports */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import { useForm } from 'react-hook-form';
+import { toast, ToastContainer } from 'react-toastify';
 
 import { Container } from '../Container/Container';
 import InputControl from '../ControlFields/InputControl';
 import { TextareaControl } from '../ControlFields/TextareaControl';
+
+import 'react-toastify/dist/ReactToastify.css';
+
 import styled from './style.module.scss';
 
 import axios from 'axios';
@@ -20,7 +25,13 @@ export const Contact = () => {
   const methods = useForm<IContactForm>();
 
   const onSubmit = async (data: IContactForm) => {
-    await axios.post('/api/sendmail/contact', data);
+    try {
+      await axios.post('/api/sendmail/contact', data);
+      toast.success('E-mail enviado.', { position: 'top-right' });
+      methods.reset();
+    } catch (error) {
+      toast.error('Erro ao enviar o e-mail!', { position: 'top-right' });
+    }
   };
 
   const getError = (key: keyof IContactForm) => {
@@ -187,6 +198,7 @@ export const Contact = () => {
             {methods.formState.isSubmitting ? 'ENVIANDO' : 'ENVIAR'}
           </button>
         </form>
+        <ToastContainer theme="colored" />
       </Container>
     </div>
   );

@@ -1,5 +1,6 @@
 export const allLinks = {
   HOME: '/',
   CONTACT: '/#contact',
-  SOCIAL_NETWORKS: 'https://bento.me/anazilio'
+  SOCIAL_NETWORKS: 'https://bento.me/anazilio',
+  WORK: '/#work'
 };
