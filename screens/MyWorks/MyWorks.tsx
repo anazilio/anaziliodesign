@@ -58,8 +58,8 @@ export const MyWorks = ({
               className={styled.gridItem}
               key={index}
               data-aos={index % 2 !== 0 ? 'fade-right' : 'fade-left'}
-              data-aos-delay={index > 9 ? 0.9 : Number(`0.${index}`)}
-              data-aos-duration={800}
+              data-aos-delay={index > 6 ? 0.6 : Number(`0.${index}`)}
+              data-aos-duration={500}
             >
               {item.img ? (
                 <Image

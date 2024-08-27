@@ -17,7 +17,7 @@ const lexend = Lexend({
 });
 
 export const metadata = changeHeader({
-  title: 'Portfolio Ana Zilio',
+  title: 'Ana Zilio',
   description: 'Transformando ideias em arte'
 });
 
