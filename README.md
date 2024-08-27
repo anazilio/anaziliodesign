@@ -2,7 +2,7 @@
 
 ### 💻 Figma
 
-- [Layout]([https://www.figma.com/file/t4hrbbiVa8tRSMAcnzK3v0/GMartins?type=design&node-id=0-1&mode=design&t=CAtpGfjqbs1HxGQw-0](https://www.figma.com/design/N4i0jX4Uj2Rss7GGOxSgoQ/AZD?node-id=0-1&t=xU69GQhZJCcOANBh-0))
+- [Layout](https://www.figma.com/design/N4i0jX4Uj2Rss7GGOxSgoQ/AZD?node-id=0-1&t=xU69GQhZJCcOANBh-0)
 
 ### 🎯 Tecnologias
 
