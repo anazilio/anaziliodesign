@@ -28,7 +28,10 @@ export const Contact = () => {
     try {
       await axios.post('/api/sendmail/contact', data);
       toast.success('E-mail enviado.', { position: 'top-right' });
-      methods.reset();
+      methods.setValue('email', '');
+      methods.setValue('message', '');
+      methods.setValue('name', '');
+      methods.setValue('subject', '');
     } catch (error) {
       toast.error('Erro ao enviar o e-mail!', { position: 'top-right' });
     }
