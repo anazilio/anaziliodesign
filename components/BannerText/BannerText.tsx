@@ -19,13 +19,22 @@ export const BannerText = () => {
         <div>
           <span className={styled.ideas}>
             ideias
-            <Image
-              alt="marcação"
-              src={'/assets/images/icones/arrow_ideia.svg'}
-              width={255}
-              height={20}
-              draggable={false}
-            />
+            <svg
+              width="231"
+              height="19"
+              viewBox="0 0 231 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 15.6081C105.966 -7.27326 228 7.98098 228 7.98098"
+                stroke="#8E178E"
+                strokeWidth="5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={styled.arrow_ideia}
+              ></path>
+            </svg>
           </span>{' '}
           em{' '}
           <span className={styled.art}>

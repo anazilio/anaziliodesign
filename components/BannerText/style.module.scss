@@ -45,7 +45,7 @@
       display: block;
       position: relative;
 
-      & img {
+      & svg {
         position: absolute;
         bottom: -10px;
         left: 0;
@@ -71,7 +71,7 @@
         height: 75px;
       }
 
-      .ideas img {
+      .ideas svg {
         bottom: -10px;
         left: 0;
         width: 100px;
@@ -87,17 +87,28 @@
   }
 }
 
-@-webkit-keyframes animate-svg-stroke-1 {
+@keyframes animate-sequence-arrow_ideia {
   0% {
-    stroke-dashoffset: 1174.6578369140625px;
-    stroke-dasharray: 1174.6578369140625px;
+    stroke-dashoffset: 385.44390869140625px;
+    stroke-dasharray: 385.44390869140625px;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 385.44390869140625px;
   }
 
   100% {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 1174.6578369140625px;
+    stroke-dashoffset: 385.44390869140625px;
+    stroke-dasharray: 385.44390869140625px;
   }
 }
+
+
+.arrow_ideia {
+  animation: animate-sequence-arrow_ideia 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s infinite;
+}
+
 
 @keyframes animate-svg-stroke-1 {
   0% {
@@ -112,6 +123,5 @@
 }
 
 .svg-elem-1 {
-  -webkit-animation: animate-svg-stroke-1 2s ease 0s infinite;
   animation: animate-svg-stroke-1 2s ease 0s infinite;
 }

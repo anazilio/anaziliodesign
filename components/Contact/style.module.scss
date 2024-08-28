@@ -125,8 +125,6 @@
   animation: animate-sequence-arrow_ideia 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s infinite;
 }
 
-
-
 @keyframes animate-svg-stroke-acents-1 {
   0% {
     stroke-dashoffset: 29.564462661743164px;
@@ -145,10 +143,8 @@
 }
 
 .acents-1 {
-  animation: animate-svg-stroke-acents-1 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s infinite;
+  animation: animate-svg-stroke-acents-1 1.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0s reverse infinite;
 }
-
-
 
 @keyframes animate-svg-stroke-acents-2 {
   0% {
@@ -168,10 +164,8 @@
 }
 
 .acents-2 {
-  animation: animate-svg-stroke-acents-2 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s infinite;
+  animation: animate-svg-stroke-acents-2 1.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s reverse infinite;
 }
-
-
 
 @keyframes animate-svg-stroke-acents-3 {
   0% {
@@ -180,7 +174,7 @@
   }
 
   50% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 59.12871170043945px;
     stroke-dasharray: 29.564355850219727px;
   }
 
@@ -191,10 +185,8 @@
 }
 
 .acents-3 {
-  animation: animate-svg-stroke-acents-3 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s infinite;
+  animation: animate-svg-stroke-acents-3 1.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s infinite;
 }
-
-
 
 
 @keyframes animate-svg-stroke-1 {
@@ -217,8 +209,6 @@
 .arrow_down-1 {
   animation: animate-svg-stroke-1 4s 1s infinite;
 }
-
-
 
 @keyframes animate-svg-stroke-2 {
   0% {
