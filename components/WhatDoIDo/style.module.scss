@@ -110,18 +110,13 @@
     stroke-dasharray: 385.44390869140625px;
   }
 
-  50% {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 385.44390869140625px;
-  }
-
   100% {
-    stroke-dashoffset: 385.44390869140625px;
+    stroke-dashoffset: 0;
     stroke-dasharray: 385.44390869140625px;
   }
 }
 
 
 .arrow_ideia {
-  animation: animate-sequence-arrow_ideia 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s infinite;
+  animation: animate-sequence-arrow_ideia 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s forwards;
 }

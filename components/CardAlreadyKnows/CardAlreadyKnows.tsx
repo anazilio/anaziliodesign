@@ -1,4 +1,11 @@
+import { Lily_Script_One } from 'next/font/google';
+
 import styled from './style.module.scss';
+
+const lily_Script_One = Lily_Script_One({
+  subsets: ['latin'],
+  weight: '400'
+});
 
 export interface ICardAlreadyKnowsProps {
   description: string;
@@ -30,7 +37,7 @@ export const CardAlreadyKnows = ({
         {getInitialsName(name)}
       </span>
       <div className={styled.contentCardAlreadyKnows}>
-        <span>“</span>
+        <span className={lily_Script_One.className}>“</span>
         <p>{description}</p>
         <strong>{name}</strong>
         <p>{location}</p>

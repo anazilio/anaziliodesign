@@ -1,8 +1,11 @@
+import { useStartAnimation } from '../../hooks/useStartAnimation';
 import { Container } from '../Container/Container';
 import { SomeWorksSlider } from '../SomeWorksSlider/SomeWorksSlider';
 import styled from './style.module.scss';
 
 export const SomeWorks = () => {
+  useStartAnimation(styled.title, styled.arrow_ideia2, 'arrow_ideia2');
+
   return (
     <div id="work">
       <div className={styled.SomeWorks}>
@@ -24,7 +27,7 @@ export const SomeWorks = () => {
                   strokeWidth="5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className={styled.arrow_ideia2}
+                  id="arrow_ideia2"
                 ></path>
               </svg>
             </span>

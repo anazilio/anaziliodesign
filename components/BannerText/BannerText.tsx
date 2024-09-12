@@ -1,11 +1,13 @@
 import Image from 'next/image';
 
+import { useStartAnimation } from '../../hooks/useStartAnimation';
 import styled from './style.module.scss';
 
 export const BannerText = () => {
+  useStartAnimation('BannerText-title', styled.arrow_ideia, 'arrow_ideia5');
   return (
     <div className={styled.BannerText}>
-      <h1 data-aos="fade-up">
+      <h1 data-aos="fade-up" className="BannerText-title">
         <span className={styled.transform}>
           <Image
             alt="marcação"
@@ -32,7 +34,7 @@ export const BannerText = () => {
                 strokeWidth="5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className={styled.arrow_ideia}
+                id="arrow_ideia5"
               ></path>
             </svg>
           </span>{' '}

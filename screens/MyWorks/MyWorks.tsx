@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useEffect } from 'react';
 
 import { ImageType } from '../../types/ImageType';
@@ -61,12 +60,8 @@ export const MyWorks = ({
               data-aos-delay={0}
             >
               {item.img ? (
-                <Image
-                  alt={item.description || ''}
-                  src={item.img}
-                  width={900}
-                  height={900}
-                />
+                // eslint-disable-next-line @next/next/no-img-element
+                <img alt={item.description || ''} src={item.img} />
               ) : item.video ? (
                 <video controls width={900} height={400}>
                   <source src={item.video} type="video/mp4" />

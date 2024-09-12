@@ -50,15 +50,11 @@
         border-radius: 8px;
         object-fit: cover;
         transition: all 0.2s ease;
-        width: 100% !important;
-        height: 100% !important;
-        max-width: 1080px !important;
       }
 
       & video {
         border-radius: 8px;
         width: 100% !important;
-
       }
 
       &:hover {

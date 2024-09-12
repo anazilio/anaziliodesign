@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 
+import { useStartAnimation } from '../../hooks/useStartAnimation';
 import { mockDepositions } from '../../mocks/depoimentos';
 import { CardAlreadyKnows } from '../CardAlreadyKnows/CardAlreadyKnows';
 import { Container } from '../Container/Container';
@@ -35,6 +36,7 @@ function SamplePrevArrow(props) {
 }
 
 export const WhoAlreadyKnows = () => {
+  useStartAnimation(styled.title, styled.arrow_ideia, 'arrow_ideia3');
   return (
     <div className={styled.WhoAlreadyKnows}>
       <div className={styled.coverTop} />
@@ -55,7 +57,7 @@ export const WhoAlreadyKnows = () => {
                 strokeWidth="5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className={styled.arrow_ideia}
+                id={'arrow_ideia3'}
               ></path>
             </svg>
           </span>

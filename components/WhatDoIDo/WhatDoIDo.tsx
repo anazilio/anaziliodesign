@@ -1,9 +1,14 @@
+'use client';
+
+import { useStartAnimation } from '../../hooks/useStartAnimation';
 import { Container } from '../Container/Container';
 import { mySkillsMock } from '../MySkills/mock';
 import { MySkills } from '../MySkills/MySkills';
 import styled from './style.module.scss';
 
 export const WhatDoIDo = () => {
+  useStartAnimation(styled.title, styled.arrow_ideia, 'arrow_ideia');
+
   return (
     <div className={styled.WhatDoIDo}>
       <div className={styled.coverTop} />
@@ -25,7 +30,7 @@ export const WhatDoIDo = () => {
                 strokeWidth="5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className={styled.arrow_ideia}
+                id="arrow_ideia"
               ></path>
             </svg>
           </span>

@@ -13,6 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import styled from './style.module.scss';
 
 import axios from 'axios';
+import { useStartAnimation } from '../../hooks/useStartAnimation';
 
 export interface IContactForm {
   name: string;
@@ -22,6 +23,8 @@ export interface IContactForm {
 }
 
 export const Contact = () => {
+  useStartAnimation('azd-content-svg', styled.arrow_ideia, 'arrow_ideia4');
+
   const methods = useForm<IContactForm>();
 
   const onSubmit = async (data: IContactForm) => {
@@ -44,7 +47,7 @@ export const Contact = () => {
   return (
     <div className={styled.Contact}>
       <Container className={styled.container}>
-        <div id="contact" data-aos="fade-up">
+        <div id="contact" data-aos="fade-up" className="azd-content-svg">
           <h1 className={styled.title}>
             Pronto para <br />
             transformar suas <br />
@@ -65,14 +68,12 @@ export const Contact = () => {
                     strokeMiterlimit="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={styled['arrow_down-1']}
                   ></path>
                   <path
                     d="M33 2.5C16.8333 18.6667 -7.60002 60.1 24 96.5"
                     stroke="#8E178E"
                     strokeWidth="5"
                     strokeLinecap="round"
-                    className={styled['arrow_down-2']}
                   ></path>
                 </svg>
                 ideias
@@ -90,7 +91,7 @@ export const Contact = () => {
                     strokeWidth="5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={styled.arrow_ideia}
+                    id="arrow_ideia4"
                   ></path>
                 </svg>
               </span>
@@ -111,21 +112,18 @@ export const Contact = () => {
                   stroke="#8E178E"
                   strokeWidth="5"
                   strokeLinecap="round"
-                  className={styled['acents-1']}
                 ></path>
                 <path
                   d="M12.2514 23.34C13.6993 12.1293 6.76605 2.99996 6.76605 2.99996"
                   stroke="#8E178E"
                   strokeWidth="5"
                   strokeLinecap="round"
-                  className={styled['acents-2']}
                 ></path>
                 <path
                   d="M59.3345 40.4306C48.6649 34.8031 32.3677 39.8451 32.3677 39.8451"
                   stroke="#8E178E"
                   strokeWidth="5"
                   strokeLinecap="round"
-                  className={styled['acents-3']}
                 ></path>
               </svg>
             </span>
