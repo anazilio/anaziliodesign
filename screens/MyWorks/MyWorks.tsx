@@ -63,7 +63,7 @@ export const MyWorks = ({
                 // eslint-disable-next-line @next/next/no-img-element
                 <img alt={item.description || ''} src={item.img} />
               ) : item.video ? (
-                <video controls width={900} height={400}>
+                <video controls width={'100%'}>
                   <source src={item.video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
