@@ -381,7 +381,7 @@ export const myWorks = {
       },
       {
         description: '',
-        img: '/PortfolioAZD/04. ObaOba/08.png'
+        img: '/PortfolioAZD/04. ObaOba/08.jpg'
       },
       {
         description: '',
