@@ -8,19 +8,19 @@ export const myWorks = {
       desktop: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/01. Tacos Y Salsa/06.jpg'
+          url: '/PortfolioAZD/01. Tacos Y Salsa/tacos.jpg'
         }
       ],
       mobile: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/01. Tacos Y Salsa/06.jpg'
+          url: '/PortfolioAZD/01. Tacos Y Salsa/tacos.jpg'
         }
       ],
       tablet: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/01. Tacos Y Salsa/06.jpg'
+          url: '/PortfolioAZD/01. Tacos Y Salsa/tacos.jpg'
         }
       ]
     },
@@ -100,19 +100,19 @@ export const myWorks = {
       desktop: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/06. Dulce Milagro/0.png'
+          url: '/PortfolioAZD/06. Dulce Milagro/dulce.jpg'
         }
       ],
       mobile: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/06. Dulce Milagro/0.png'
+          url: '/PortfolioAZD/06. Dulce Milagro/dulce.jpg'
         }
       ],
       tablet: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/06. Dulce Milagro/0.png'
+          url: '/PortfolioAZD/06. Dulce Milagro/dulce.jpg'
         }
       ]
     },
@@ -168,19 +168,19 @@ export const myWorks = {
       desktop: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/05. Cozinha Guapo/01.gif'
+          url: '/PortfolioAZD/05. Cozinha Guapo/guapo.jpg'
         }
       ],
       mobile: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/05. Cozinha Guapo/01.gif'
+          url: '/PortfolioAZD/05. Cozinha Guapo/guapo.jpg'
         }
       ],
       tablet: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/05. Cozinha Guapo/01.gif'
+          url: '/PortfolioAZD/05. Cozinha Guapo/guapo.jpg'
         }
       ]
     },
@@ -248,19 +248,19 @@ export const myWorks = {
       desktop: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/03. Crippa Rey/01.gif'
+          url: '/PortfolioAZD/03. Crippa Rey/crippa.jpg'
         }
       ],
       mobile: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/03. Crippa Rey/01.gif'
+          url: '/PortfolioAZD/03. Crippa Rey/crippa.jpg'
         }
       ],
       tablet: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/03. Crippa Rey/01.gif'
+          url: '/PortfolioAZD/03. Crippa Rey/crippa.jpg'
         }
       ]
     },
@@ -332,19 +332,19 @@ export const myWorks = {
       desktop: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/04. ObaOba/01.gif'
+          url: '/PortfolioAZD/04. ObaOba/oba.jpg'
         }
       ],
       mobile: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/04. ObaOba/01.gif'
+          url: '/PortfolioAZD/04. ObaOba/oba.jpg'
         }
       ],
       tablet: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/04. ObaOba/01.gif'
+          url: '/PortfolioAZD/04. ObaOba/oba.jpg'
         }
       ]
     },
@@ -404,19 +404,19 @@ export const myWorks = {
       desktop: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/02. Receitas da Vovó Edith Eisler/01.gif'
+          url: '/PortfolioAZD/02. Receitas da Vovó Edith Eisler/edith.jpg'
         }
       ],
       mobile: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/02. Receitas da Vovó Edith Eisler/01.gif'
+          url: '/PortfolioAZD/02. Receitas da Vovó Edith Eisler/edith.jpg'
         }
       ],
       tablet: [
         {
           alt: 'banner',
-          url: '/PortfolioAZD/02. Receitas da Vovó Edith Eisler/01.gif'
+          url: '/PortfolioAZD/02. Receitas da Vovó Edith Eisler/edith.jpg'
         }
       ]
     },
