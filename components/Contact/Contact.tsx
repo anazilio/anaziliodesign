@@ -30,13 +30,13 @@ export const Contact = () => {
   const onSubmit = async (data: IContactForm) => {
     try {
       await axios.post('/api/sendmail/contact', data);
-      toast.success('E-mail enviado.', { position: 'top-right' });
+      toast.success('E-mail enviado.', { position: 'bottom-right' });
       methods.setValue('email', '');
       methods.setValue('message', '');
       methods.setValue('name', '');
       methods.setValue('subject', '');
     } catch (error) {
-      toast.error('Erro ao enviar o e-mail!', { position: 'top-right' });
+      toast.error('Erro ao enviar o e-mail!', { position: 'bottom-right' });
     }
   };
 
