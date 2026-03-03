@@ -1,7 +1,9 @@
 /* eslint-disable no-undef */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // swcMinify: true
+  reactStrictMode: true,
+  swcMinify: true,
+  productionBrowserSourceMaps: false
 };
 
 module.exports = nextConfig;

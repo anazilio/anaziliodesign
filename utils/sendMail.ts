@@ -6,12 +6,12 @@ import SMTPTransport from 'nodemailer/lib/smtp-transport';
 import nodemailer from 'nodemailer';
 
 const smtpOptions = {
-  host: process.env.NEXT_PUBLIC_SMTP_HOST,
-  port: parseInt(process.env.NEXT_PUBLIC_SMTP_PORT!),
+  host: process.env.NEXT_PRIVATE_SMTP_HOST,
+  port: parseInt(process.env.NEXT_PRIVATE_SMTP_PORT!),
   secure: true,
   auth: {
-    user: process.env.NEXT_PUBLIC_SMTP_USER,
-    pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD
+    user: process.env.NEXT_PRIVATE_SMTP_USER,
+    pass: process.env.NEXT_PRIVATE_SMTP_PASSWORD
   }
 };
 
@@ -68,8 +68,8 @@ export default class SendMailer {
       subject: this.subject,
       attachDataUrls: this.attachDataUrls,
       attachments: this.attachments,
-      from: process.env.NEXT_PUBLIC_SMTP_FROM_EMAIL,
-      to: [process.env.NEXT_PUBLIC_SMTP_FROM_EMAIL!, ...(this.to ?? [])],
+      from: process.env.NEXT_PRIVATE_SMTP_FROM_EMAIL,
+      to: [process.env.NEXT_PRIVATE_SMTP_FROM_EMAIL!, ...(this.to ?? [])],
       priority: 'high'
     });
   }

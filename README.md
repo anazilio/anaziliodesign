@@ -1,4 +1,4 @@
-# anaziliodesign 
+# anaziliodesign
 
 ### 💻 Figma
 
@@ -23,11 +23,11 @@
 
 - Crie um arquivo `.env` na raiz do projeto adicione as variaveis:
 
-  - `NEXT_PUBLIC_SMTP_HOST=smtp.sendgrid.net`
-  - `NEXT_PUBLIC_SMTP_PORT=465`
-  - `NEXT_PUBLIC_SMTP_USER=XXXXX`
-  - `NEXT_PUBLIC_SMTP_PASSWORD=XXXXX`
-  - `NEXT_PUBLIC_SMTP_FROM_EMAIL=xxxx@xxxx.com.br`
+  - `NEXT_PRIVATE_SMTP_HOST=smtp.sendgrid.net`
+  - `NEXT_PRIVATE_SMTP_PORT=465`
+  - `NEXT_PRIVATE_SMTP_USER=XXXXX`
+  - `NEXT_PRIVATE_SMTP_PASSWORD=XXXXX`
+  - `NEXT_PRIVATE_SMTP_FROM_EMAIL=xxxx@xxxx.com.br`
   - ##### :warning: ATENÇÃO CASO OCORRA MUDANÇAS NAS VARIAVEIS DE AMBIENTE REFLITA ELAS NO AMBIENTE DE DEPLOY `VERCEL`
 
 ### 📚 Comandos essenciais
